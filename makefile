@@ -3,7 +3,7 @@
 .PHONY: IteratedFractalGenerator.jar
 IteratedFractalGenerator.jar:
 	javac IteriertesFunktionssystem.java
-	jar cfm IteratedFractalGenerator.jar manifest.txt *.class *.java
+	jar cfm $@ manifest.txt *.class *.java
 
 clean:
 	$(RM) *.class *.jar
